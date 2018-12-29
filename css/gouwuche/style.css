@@ -1,0 +1,216 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  color: #555;
+  font-size: 14px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+td, th, caption {
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+a {
+  color: #555;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+img {
+  border: none; }
+
+ol, ul, li {
+  list-style: none; }
+
+input, textarea, select, button {
+  font: 14px Verdana,Helvetica,Arial,sans-serif; }
+
+table {
+  border-collapse: collapse; }
+
+html {
+  overflow-y: scroll; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+
+body {
+  background: #EEEEEE; }
+
+.top {
+  width: 10rem;
+  height: 1.2rem;
+  background: #fff;
+  display: flex; }
+
+.top1 {
+  width: 1.33333rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.top2 {
+  width: 7.33333rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.53333rem; }
+
+.gouwu {
+  width: 10rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+
+.che {
+  width: 3.33333rem;
+  height: 3.33333rem;
+  border-radius: 50%;
+  background: #CCCCCC;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.gouwuche {
+  width: 2rem;
+  height: 2rem; }
+
+.wen {
+  width: 10rem;
+  font-size: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4rem; }
+
+.wen1 {
+  width: 10rem;
+  font-size: 0.34667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.2rem;
+  color: #A0A0A0; }
+
+.wen2 {
+  width: 10rem;
+  font-size: 0.34667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.26667rem; }
+
+.wen3 {
+  width: 2.4rem;
+  height: 0.73333rem;
+  border-radius: 0.06667rem 0.06667rem 0.06667rem 0.06667rem;
+  border: 1px solid #000;
+  font-size: 0.34667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.xihuan {
+  width: 10rem;
+  height: 1rem;
+  background: #F2F2F2;
+  margin-top: 0.26667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.66667rem; }
+
+.xihuan1 {
+  width: 0.33333rem;
+  height: 0.04rem;
+  background: #FF5000; }
+
+.xihuan2 {
+  width: 0.10667rem;
+  height: 0.10667rem;
+  border-radius: 50%;
+  background: #FF5000; }
+
+.xihuan02 {
+  width: 0.10667rem;
+  height: 0.10667rem;
+  border-radius: 50%;
+  background: #FF5000;
+  margin-left: 0.26667rem; }
+
+.xihuan3 {
+  width: 0.46667rem;
+  height: 0.46667rem;
+  background: url(../../img/xinxing.png) no-repeat;
+  background-size: 100%;
+  margin-left: 0.13333rem; }
+
+.xihuan4 {
+  color: #FF5000;
+  font-size: 0.46667rem;
+  margin-left: 0.13333rem; }
+
+.tubiao {
+  width: 10rem;
+  height: 7.06667rem;
+  display: flex;
+  justify-content: space-evenly;
+  background: #F2F2F2;
+  margin-top: 0.26667rem; }
+
+.tubiao1 {
+  width: 4.66667rem;
+  height: 7.06667rem;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.13333rem 0.13333rem 0.13333rem 0.13333rem; }
+
+.tubiao2 {
+  width: 4.66667rem;
+  height: 4.66667rem;
+  border-radius: 0.13333rem 0.13333rem 0rem 0rem; }
+
+.tubiao3 {
+  width: 4.66667rem;
+  height: 1.06667rem;
+  margin-left: 0.26667rem;
+  font-size: 0.37333rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; }
+
+.tubiao4 {
+  color: #FF5000;
+  font-size: 0.46667rem;
+  margin-top: 0.4rem;
+  margin-left: 0.26667rem; }
+
+.tubiao5 {
+  color: #999999;
+  font-size: 0.33333rem;
+  margin-top: 0.53333rem;
+  margin-left: 0.13333rem; }
+
+/*# sourceMappingURL=style.css.map */

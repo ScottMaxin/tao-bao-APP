@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>天猫</title>
+	<link rel="stylesheet" href="css/tianmao/style.css">
+	<script>
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+     <link rel="stylesheet" href="dist/css/swiper.min.css">
+    </head>
+<body  onload="leftTimer()">
+<script type="text/javascript"> 
+window.onscroll = function(){ 
+    var t = document.documentElement.scrollTop || document.body.scrollTop;  
+    var top_div = document.getElementById( "ztop_div" ); 
+    if( t >= 300 ) { 
+        top_div.style.display = "inline"; 
+    } else { 
+        top_div.style.display = "none"; 
+    } 
+} 
+
+</script> 
+<a name="top">顶部<a> 
+<div id="ztop_div"><a href="#top"><img src="img/dingbu.png" alt="" class="ztopz1"><p class="ztopz2">顶部</p></a></div> 
+<br /> 
+<br />
+<div>
+	<div class="top"><a href="index.html"><img src="img/liebiao.png" alt="" class="top1"></a><div class="top02"><img src="img/tian.webp" alt="" class="top2"></div><a href="wode.html"><img src="img/wode2.png" alt="" class="top3"></a></div>
+	<div class="topz"><a href="shousuo.html"><div class="topz1"><p class="topz3"></p>搜索商品，品牌</div></a></div>
+	    <ul class="classify">
+    	<a href=""><li><img src="img/a1.webp" alt="">
+    		<p>苏宁易购</p>
+    	</li></a>
+    	<a href=""><li><img src="img/a2.png" alt="">
+    		<p>天猫超市</p>
+    	</li></a>
+    	<a href=""><li><img src="img/a3.webp" alt="">
+    		<p>天猫国际</p>
+    	</li></a>
+    	<a href=""><li><img src="img/a4.webp" alt="">
+    		<p>聚划算</p>
+    	</li></a>
+    	<a href=""><li><img src="img/a5.webp" alt="">
+    		<p>分类</p>
+    	</li></a>    	
+    </ul>
+     <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/a6.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a7.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a8.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a9.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a10.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a11.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a12.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a13.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a14.webp" alt=""></div>
+        <div class="swiper-slide"><img src="img/a15.webp" alt=""></div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+   </div>
+   <script src="dist/js/swiper.min.js"></script>
+    <script>       
+  var mySwiper = new Swiper ('.swiper-container',{
+    autoplay: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+    </script> 
+    <div class="tu"><img src="img/tu.webp" alt="" class="tu1"></div>
+    <ul class="youxuan">
+   	<li class="youxuan1">
+   	<div class="youxuan2"><p class="youxuan004">限时抢购</p>
+   	<div class="youxuan5">
+   	    <div id="timer1"></div> : 
+   	    <div id="timer2"></div> : 
+   	    <div id="timer3"></div>
+    <script language="javascript" type="text/javascript">  
+function leftTimer(year,month,day,hour,minute,second){ 
+  var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date());
+  var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10);
+  var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10);
+  var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); 
+  var seconds = parseInt(leftTime / 1000 % 60, 10);
+  hours = checkTime(hours); 
+  minutes = checkTime(minutes); 
+  seconds = checkTime(seconds); 
+  setInterval("leftTimer(2019,11,11,11,11,11)",1000); 
+  document.getElementById("timer1").innerHTML = hours; 
+  document.getElementById("timer2").innerHTML = minutes; 
+  document.getElementById("timer3").innerHTML = seconds;
+} 
+function checkTime(i){
+  if(i<10) 
+  { 
+    i = "0" + i; 
+  } 
+  return i; 
+}  
+</script>
+</div>
+</div>
+<div class="youxuan016"><img src="img/gou1.webp" alt="" class="youxuan6"><p class="youxuan16">限时特价</p></div>
+<div class="youxuan016"><img src="img/gou2.webp" alt="" class="youxuan6"><p class="youxuan16">爆款直降</p></div></li>
+   	<li class="youxuan1">
+   	<div class="youxuan2"><p class="youxuan004">天猫好物</p>
+</div>
+<div class="youxuan016"><img src="img/gou3.webp" alt="" class="youxuan6"><p class="youxuan16">有调好物</p></div>
+<div class="youxuan016"><img src="img/gou4.webp" alt="" class="youxuan6"><p class="youxuan160">穿出高级感</p></div></li>
+   	</ul>
+   	 <ul class="zyouxuan">
+   	<li class="zyouxuan1">
+   	<div class="youxuan2"><div class="zyouxuan004"><p class="zyouxuan00004">聚划算</p><p class="zyouxuan0004">抢手机天猫专享神劵</p></div>
+</div>
+<div class="youxuan016"><img src="img/gou8.webp" alt="" class="youxuan6"><p class="youxuan160">抢100元劵</p></div>
+<div class="youxuan016"><img src="img/gou6.webp" alt="" class="youxuan6"><p class="youxuan160">10点上新</p></div>
+<div class="youxuan016"><img src="img/gou7.webp" alt="" class="youxuan6"><p class="youxuan0160">满5000元...</p></div>
+<div class="youxuan016"><img src="img/gou5.webp" alt="" class="youxuan6"><p class="youxuan160">满88元减5</p></div>
+</li>
+   	</ul>
+   	<div class="xihuan">猜你喜欢</div>
+   	   	<ul class="tubiao0">
+   		<li class="tubiao1"><div class="tubiao002"><img src="img/xi1.webp" alt="" class="tubiao2"></div><div class="xiaotu">逸兔</div><div class="tubiao3">狗年大红色袜子结婚本命年男袜 女袜情侣船袜大红喜字踩小人袜</div>
+   		<p class="tubiao4">¥21.8</p><div class="tubiao5">看相似</div><p class="tuijian">推荐：质量也行 物流好快</p></li>
+   		<li class="tubiao1"><div class="tubiao002"><img src="img/xi2.webp" alt="" class="tubiao2"></div><div class="xiaotu0">jamsi/家木斯</div><div class="tubiao3">精工老挝黄花梨文玩富甲一方木雕手把件貔貅工艺品小摆件把玩小件</div><div class="xiaotu1">3元劵</div>
+   		<p class="tubiao04">¥32.8</p><div class="tubiao5">看相似</div><p class="tuijian">推荐：没什么异味 质量很好</p></li>
+   	</ul>
+   	   	<ul class="tubiao000">
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi3.webp" alt="" class="tubiao2"></div><div class="xiaotu00">大水</div><div class="tubiao3">大水九合维生素丸100丸用于预治维生素缺乏所致的各种疾病</div><div class="xiaotu1">5元劵</div>
+   		<p class="tubiao04">¥9.2</p><div class="tubiao5">看相似</div></li>
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi4.webp" alt="" class="tubiao2"></div><div class="xiaotu0000">小帮派</div><div class="tubiao3">许愿糖千纸鹤糖彩色纸鹤糖果迷你水果糖硬糖创意喜糖500g袋装</div><div class="xiaotu01">10元劵</div>
+   		<p class="tubiao04">¥12.8</p><div class="tubiao5">看相似</div></li>
+   	</ul>
+   	   	<ul class="tubiao000">
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi5.jpg" alt="" class="tubiao2"></div><div class="xiaotu0z0"></div><div class="tubiao3">2017吉他谱书籍流行与经典超热吉他弹唱300首流行歌曲大全吉他三百首吉他书曲谱集吉他弹唱书吉他谱流行歌曲吉他弹唱书吉他六线谱</div><div class="xiaotu1">3元劵</div>
+   		<p class="tubiao04">¥36.8</p><div class="tubiao5">看相似</div></li>
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi6.webp" alt="" class="tubiao2"></div><div class="xiaotu00">诗朗</div><div class="tubiao3">诗朗茶籽水养丝滑控油去油洗发水组合装柔顺滋养男女士洗头膏正品</div><div class="xiaotu1">5元劵</div>
+   		<p class="tubiao04">¥48</p><div class="tubiao5">看相似</div></li>
+   	</ul>
+   	   	<ul class="tubiao000">
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi7.webp" alt="" class="tubiao2"></div><div class="xiaotu0110">BAXY/八喜</div><div class="tubiao3">八喜冰淇淋90g杯装香草味/巧克力/榴莲味冰激凌冷饮雪糕批发</div><div class="xiaotuz1">坏单包退</div>
+   		<p class="tubiao044">¥9</p><div class="tubiao5">看相似</div></li>
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi8.webp" alt="" class="tubiao2"></div><div class="xiaotu0100">重回汉唐</div><div class="tubiao3">重回汉唐汉服女装配饰清馨中国风非古装绣花中长斗篷保暖秋冬装</div><div class="xiaotu1">5元劵</div>
+   		<p class="tubiao04">¥268</p><div class="tubiao5">看相似</div></li>
+   	</ul>
+   	   	<ul class="tubiao000">
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi9.webp" alt="" class="tubiao2"></div><div class="xiaotu00">YVH</div><div class="tubiao3">羽绒服女中长款2018新款潮冬季韩版宽松收腰显瘦修身白鸭绒大毛领</div><div class="xiaotu01">10元劵</div>
+   		<p class="tubiao044">¥549</p><div class="tubiao5">看相似</div></li>
+   		<li class="tubiao001"><div class="tubiao002"><img src="img/xi10.webp" alt="" class="tubiao2"></div><div class="xiaotu00">锦兔</div><div class="tubiao3">诗朗茶籽水养丝滑控油去油洗发水组合装柔顺滋养男女士洗头膏正品</div><div class="xiaotu1">3元劵</div>
+   		<p class="tubiao04">¥8</p><div class="tubiao5">看相似</div></li>
+   	</ul>
+     <ul class="tubiao000">
+      <li class="tubiao001"><div class="tubiao002"><img src="img/xi11.webp" alt="" class="tubiao2"></div><div class="xiaotuz0">巧米兔</div><div class="tubiao3">巧米兔男童纯棉圆领套头线衫2018秋装新款中大儿童针织衫春秋毛衣</div><div class="xiaotu1">5元劵</div>
+      <p class="tubiao04">¥55</p><div class="tubiao5">看相似</div></li>
+      <li class="tubiao001"><div class="tubiao002"><img src="img/xi12.webp" alt="" class="tubiao2"></div><div class="xiaotu00">富光</div><div class="tubiao3">富光玻璃杯派克塑玻杯创意杯子男女士商务水杯防漏过滤双层泡茶杯</div><div class="xiaotu1">2元劵</div>
+      <p class="tubiao04">¥53.8</p><div class="tubiao5">看相似</div></li>
+    </ul>
+    </div>
+</body>
+</html>

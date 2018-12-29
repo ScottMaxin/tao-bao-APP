@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>登录</title>
+	<link rel="stylesheet" href="css/denglu/style.css">
+	<script>
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+    </head>
+    <body>
+    <div class="top">
+        <p class="top1">您需要登录才能继续访问</p>
+        <a href="index.html"><p class="top2">关闭</p></a>
+    </div>
+    <div class="tao"><img src="img/tao1.png" alt="" class="tao1"></div>
+    <form action="wode.html">
+    <div class="shuru0">
+    <input type="text" id="shuru" placeholder="手机号/邮箱/会员名" onblur="check_code()"/>
+    <input type="password" id="shuru1" placeholder="请输入密码" onblur="check_pwd()" />
+    </div>
+    <div class="duanxin"><p class="duanxin1">短信验证码登录</p>
+    <p class="duanxin2">免费注册</p>
+    </div>
+    <div class="denglu">
+        <input type="submit" class="denglu1" value="登录"/>
+        <div class="denglu2">手机淘宝快捷登录</div>
+    </div>
+    </form>
+    <script>
+    function check_code() {
+      var code =
+        document.getElementById("shuru").value;
+      var span =
+        document.getElementById("code_msg");
+      var reg = /^\w{6,10}$/;
+      if(reg.test(code)) {
+      } else {
+        document.write('<font color=blue size=20>'+"请输入6-10位字母、数字、下划线"+'</font>'+'<br>'+'<font color=red size=15>'+'<a href="denglu.html">'+"返回"+'</a>'+'</font>')
+      }
+    }
+    function check_pwd(){
+      var code2 =document.getElementById("shuru1").value;
+      var span2 =
+        document.getElementById("pwd_msg");
+      var reg2 = /^\w{6,10}$/;
+      if(reg2.test(code2)) {
+      } else {
+        document.write('<font color=blue size=20>'+"请输入8-20位字母、数字、下划线"+'</font>'+'<br>'+'<font color=red size=15>'+'<a href="denglu.html">'+"返回"+'</a>'+'</font>')
+      }
+    }
+  </script>
+    </body>
+    </html>
